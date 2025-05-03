@@ -83,7 +83,7 @@ def jogar(min,max,chances):
         if chances > 0:
             limpar_tela()
             print(f"╔══════════════════[Chances:{chances}]══════════════════════╗")
-            print(f"║ Em qual numero eu estou pensando de {min} a {max}?   ║")
+            print(f"  Em qual numero eu estou pensando de {min} a {max}?   ")
             print("╚════════════════════════════════════════════════════╝")
             try:
                 resposta = int(input("Palpite:"))
@@ -94,23 +94,23 @@ def jogar(min,max,chances):
         if resposta < numero:
             limpar_tela()
             chances -=1
-            print(f"╔═══════════[Chances:{chances}]═══════════╗")
-            print(f"║ O número e MAIOR que {resposta}          ║")
-            print("╚═════════════════════════════════╝")
+            print(f"╔         [Chances:{chances}]        ╗")
+            print(f"  O número e MAIOR que {resposta}          ")
+            print("╚                             ╝")
             input("Aperte ENTER para continuar")
         elif resposta > numero:
             limpar_tela()
             chances -=1
-            print(f"╔═══════════[Chances:{chances}]═══════════╗")
-            print(f"║ O número e MENOR que {resposta}         ║")
-            print("╚═════════════════════════════════╝")
+            print(f"╔         [Chances:{chances}]          ╗")
+            print(f"  O número e MENOR que {resposta}         ")
+            print("╚                             ╝")
             input("Aperte ENTER para continuar")
         elif resposta == numero:
             limpar_tela()
             chances -=1
-            print(f"╔═══════════[Chances:{chances}]═══════════╗")
-            print(f"║ Parábens você acertou 🎉🎉      ║")
-            print("╚═════════════════════════════════╝")
+            print(f"╔         [Chances:{chances}]          ╗")
+            print(f"║ Parábens você acertou 🎉🎉      ")
+            print("╚                              ╝")
             pergunta = input("Deseja jogar de novo??(s/n)")
             break
 
